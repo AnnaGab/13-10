@@ -13,6 +13,7 @@ public class FabricaDeConexoes {
 	Logger logger = Logger.getLogger(FabricaDeConexoes.class);
 	
 	public Connection getConnection() {
+		logger.info("Chamou a classe de conexões");
 		String url = "jdbc:mysql://localhost/sceweb";
 		
 		try {
